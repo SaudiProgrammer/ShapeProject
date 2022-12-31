@@ -1,4 +1,4 @@
-package Ch10_Aggregation;
+package C11_Without_Inheritance;
 
 public class Coordinates {
 	private int x,y;

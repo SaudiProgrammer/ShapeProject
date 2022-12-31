@@ -1,4 +1,4 @@
-package Ch10_Aggregation;
+package C11_Without_Inheritance;
 
 public class Test {
 	public static void main(String[] args) {
@@ -9,6 +9,19 @@ public class Test {
 	    		x.getRadius() + " is " + x.getArea());
 	    System.out.println("The circle is located in the "+
 	    		x.getShapeLocation());
+	    
+	    System.out.println("===========================================");
+	    
+	    Rectangle y = new Rectangle(10,10,-1,-1);
+
+	    System.out.println(
+	    		"The area for the rectangle of width " +
+	    		y.getW() + " and length " + y.getL() +
+	    		" is " + y.getArea());
+	    System.out.println("The rectangle is located in the "+
+	    		y.getShapeLocation());
+	    
+	    System.out.println("===========================================");
 	    
 	}
 }

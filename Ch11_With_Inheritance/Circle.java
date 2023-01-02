@@ -1,13 +1,12 @@
-package C11_Without_Inheritance;
+package Ch11_With_Inheritance;
 
 //Aggregated Class
-public class Circle {
+public class Circle extends Shape {
 	private double radius;
-	private Coordinates coordinates;
 	
 	public Circle(double r, Coordinates coordinates){
+		super("Circle",coordinates);
 		setRadius(r);
-		this.coordinates = coordinates;
 	}
 	
 	public Circle(double r,int x, int y){
@@ -28,9 +27,5 @@ public class Circle {
 
 	public double getArea() {
 		return Math.PI * getRadius() * getRadius();
-	}
-	
-	public String getShapeLocation() {
-		return coordinates.getLocation();
 	}
 }

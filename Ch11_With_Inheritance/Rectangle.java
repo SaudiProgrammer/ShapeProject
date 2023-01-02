@@ -1,14 +1,12 @@
-package C11_Without_Inheritance;
+package Ch11_With_Inheritance;
 
-public class Rectangle {
+public class Rectangle extends Shape {
 	private double W,L;
-	
-	private Coordinates coordinates;
-	
+		
 	public Rectangle(double W , double L , Coordinates coordinates){
+		super("Rectangle",coordinates);
 		setW(W);
 		setL(L);
-		this.coordinates = coordinates;
 	}
 	
 	public Rectangle(double W , double L , int x , int y){
@@ -29,7 +27,4 @@ public class Rectangle {
 		return L * W;
 	}
 	
-	public String getShapeLocation() {
-		return coordinates.getLocation();
-	}
 }

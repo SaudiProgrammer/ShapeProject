@@ -1,4 +1,4 @@
-package Ch13_Abstract;
+package Ch13_Interface;
 
 public class Coordinates {
 	private int x,y;

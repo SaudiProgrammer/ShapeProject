@@ -1,6 +1,6 @@
-package Ch13_Abstract;
+package Ch13_Interface;
 
-public abstract class Shape {
+public class Shape {
 	private String name;
 	private Coordinates coordinates;
 	
@@ -34,5 +34,7 @@ public abstract class Shape {
 		return 0;
 	}
 	
-	public abstract String getAreaS();
+	public String getAreaS() {
+		return "0";
+	}
 }

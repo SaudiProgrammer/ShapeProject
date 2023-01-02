@@ -1,4 +1,4 @@
-package Ch13_Abstract;
+package Ch13_Interface;
 
 public class Triangle extends Shape{
 	private double height;

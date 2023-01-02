@@ -1,6 +1,6 @@
-package Ch13_Abstract;
+package Ch13_Interface;
 
-public class Cylinder extends Circle{
+public class Cylinder extends Circle implements SolidShape{
 	private double height;
 	
 	public Cylinder(double r, double h) {
@@ -13,4 +13,8 @@ public class Cylinder extends Circle{
 	public void setHeight(double h) {this.height = h;}
 
 	public double getVolume() {return getArea()* height;}
+	public String getVolumeS() {
+		return super.getAreaS() + "\nThe volume of the Cylinder is "+
+			   getVolume();
+	}
 }

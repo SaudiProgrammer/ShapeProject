@@ -1,4 +1,4 @@
-package Ch11_Without_Polymorphism;
+package Ch11_With_Polymorphism;
 
 public class Triangle extends Shape{
 	private double height;
@@ -31,4 +31,9 @@ public class Triangle extends Shape{
 		return 0.5 * height * base;
 	}
 
+	public String getAreaS() {
+		return  "The area for the triangle of base " +
+	    		getBase() + " and height " + getHeight() +
+	    		" is " + getArea();
+	}
 }

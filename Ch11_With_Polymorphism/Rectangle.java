@@ -1,4 +1,4 @@
-package Ch11_Without_Polymorphism;
+package Ch11_With_Polymorphism;
 
 public class Rectangle extends Shape {
 	private double W,L;
@@ -31,4 +31,8 @@ public class Rectangle extends Shape {
 		return L * W;
 	}
 	
+	public String getAreaS() {
+		return  "The area for the rectangle of width " +
+	    		getW() + " and length " + getL() + " is " + getArea();
+	}
 }

@@ -1,4 +1,4 @@
-package Ch11_Without_Polymorphism;
+package Ch11_With_Polymorphism;
 
 public class Pyramid extends Triangle {
 	private double height;

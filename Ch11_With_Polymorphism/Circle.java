@@ -1,4 +1,4 @@
-package Ch11_Without_Polymorphism;
+package Ch11_With_Polymorphism;
 
 //Aggregated Class
 public class Circle extends Shape {
@@ -31,5 +31,10 @@ public class Circle extends Shape {
 
 	public double getArea() {
 		return Math.PI * getRadius() * getRadius();
+	}
+	
+	public String getAreaS() {
+		return  "The area for the circle of radius " +
+	    		getRadius() + " is " + getArea();
 	}
 }

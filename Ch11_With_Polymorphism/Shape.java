@@ -1,4 +1,4 @@
-package Ch11_Without_Polymorphism;
+package Ch11_With_Polymorphism;
 
 public class Shape {
 	private String name;
@@ -25,5 +25,16 @@ public class Shape {
 		coordinates.setY(y);
 	}
 
-	public String getShapeLocation() {return coordinates.getLocation();}
+	public String getShapeLocation() {
+		return "The "+ name +" is located in the "+
+				coordinates.getLocation();
+	}
+	
+	public double getArea() {
+		return 0;
+	}
+	
+	public String getAreaS() {
+		return "0";
+	}
 }

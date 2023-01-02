@@ -1,4 +1,4 @@
-package Ch11_With_Inheritance;
+package Ch11_Without_Polymorphism;
 
 //Aggregated Class
 public class Circle extends Shape {
@@ -11,6 +11,10 @@ public class Circle extends Shape {
 	
 	public Circle(double r,int x, int y){
 		this(r, new Coordinates(x,y));
+	}
+	
+	public Circle(double r){
+		this(r,0,0);
 	}
 	
 	public Circle(){

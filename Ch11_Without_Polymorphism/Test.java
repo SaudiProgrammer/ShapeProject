@@ -1,4 +1,4 @@
-package Ch11_With_Inheritance;
+package Ch11_Without_Polymorphism;
 
 public class Test {
 	public static void main(String[] args) {
@@ -20,6 +20,17 @@ public class Test {
 	    		" is " + y.getArea());
 	    System.out.println("The rectangle is located in the "+
 	    		y.getShapeLocation());
+	    
+	    System.out.println("===========================================");
+	    
+	    Triangle z = new Triangle(10,10,1,-1);
+
+	    System.out.println(
+	    		"The area for the triangle of base " +
+	    		z.getBase() + " and height " + z.getHeight() +
+	    		" is " + z.getArea());
+	    System.out.println("The triangle is located in the "+
+	    		z.getShapeLocation());
 	    
 	    System.out.println("===========================================");
 	    

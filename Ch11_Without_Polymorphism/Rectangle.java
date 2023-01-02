@@ -1,4 +1,4 @@
-package Ch11_With_Inheritance;
+package Ch11_Without_Polymorphism;
 
 public class Rectangle extends Shape {
 	private double W,L;
@@ -11,6 +11,10 @@ public class Rectangle extends Shape {
 	
 	public Rectangle(double W , double L , int x , int y){
 		this(W , L , new Coordinates(x,y));
+	}
+	
+	public Rectangle(double W , double L){
+		this(W,L,0,0);
 	}
 	
 	public Rectangle(){

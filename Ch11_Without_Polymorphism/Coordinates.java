@@ -1,4 +1,4 @@
-package Ch11_With_Inheritance;
+package Ch11_Without_Polymorphism;
 
 public class Coordinates {
 	private int x,y;

@@ -1,6 +1,6 @@
-package Ch11_With_Polymorphism;
+package Ch13_Abstract;
 
-public class Shape {
+public abstract class Shape {
 	private String name;
 	private Coordinates coordinates;
 	
@@ -34,7 +34,5 @@ public class Shape {
 		return 0;
 	}
 	
-	public String getAreaS() {
-		return "0";
-	}
+	public abstract String getAreaS();
 }

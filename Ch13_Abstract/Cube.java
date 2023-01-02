@@ -1,11 +1,12 @@
-package Ch11_With_Polymorphism;
+package Ch13_Abstract;
 
 public class Cube extends Rectangle{
 	private double height;
 	
-	public Cube(double W , double L) {
+	public Cube(double W , double L, double h) {
 		super(W,L);
 		setName("Cube");
+		setHeight(h);
 	}
 	
 	public double getHeight() {return height;}

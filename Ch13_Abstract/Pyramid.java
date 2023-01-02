@@ -1,11 +1,12 @@
-package Ch11_With_Polymorphism;
+package Ch13_Abstract;
 
 public class Pyramid extends Triangle {
 	private double height;
 	
-	public Pyramid(double baseW , double baseL) {
+	public Pyramid(double baseW , double baseL, double h) {
 		super(baseW,baseL);
 		setName("Pyramid");
+		setHeight(h);
 	}
 	
 	public double getHeight() {return height;}

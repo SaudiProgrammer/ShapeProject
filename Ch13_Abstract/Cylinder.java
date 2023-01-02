@@ -1,11 +1,12 @@
-package Ch11_With_Polymorphism;
+package Ch13_Abstract;
 
 public class Cylinder extends Circle{
 	private double height;
 	
-	public Cylinder(double r) {
+	public Cylinder(double r, double h) {
 		super(r);
 		setName("Cylinder");
+		setHeight(h);
 	}
 	
 	public double getHeight() {return height;}
